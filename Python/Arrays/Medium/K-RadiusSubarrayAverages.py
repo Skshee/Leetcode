@@ -29,3 +29,4 @@ class Solution:
             res[j]=avg
         return res
             
+
