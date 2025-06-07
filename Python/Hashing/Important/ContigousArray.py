@@ -15,8 +15,8 @@ class Solution:
             if (num == 1):
                 ones += 1
                 
-            if((ones - zeros)not in diff):
-                diff[(ones - zeros)] = i
+            if((ones - zeros)not in diff):   # When number of one's and zeros are equal from index 0 to i, diff will be 0 but this case won't be captured correctly
+                diff[(ones - zeros)] = i 
             
             if(ones == zeros):
                 res = ones + zeros 
