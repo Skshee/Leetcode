@@ -1,5 +1,7 @@
 '''
 Link : https://leetcode.com/problems/maximum-difference-between-increasing-elements/?envType=daily-question&envId=2025-06-16
+
+Question of the day : 16/6/25
 '''
 
 class Solution:
