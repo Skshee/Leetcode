@@ -1,16 +1,18 @@
+'''
+Link : https://leetcode.com/problems/continuous-subarray-sum/
+Reference : https://www.youtube.com/watch?v=OKcrLfR-8mE&t=1s
+'''
+
 class Solution:
     def checkSubarraySum(self, nums: List[int], k: int) -> bool:
-        n = len(nums)
-        left = 0
-        prefix_sum = [0]*(n+1)
-        for i in range(n):
-            prefix_sum[i+1] = prefix_sum[i] + nums[i]
-        
-        for i in range(n):
-            for j in range(i+2,n+1):
-                sub_sum = prefix_sum[j] - prefix_sum[i]
-                if (sub_sum % k == 0):
-                    return True
-        else:
-            return False
-        
+        rem = {0:-1}  # Mapping remainders to the indices
+        total = 0
+
+        for i,num in enumerate(nums):
+            total += num
+            remainder = total % k
+            if(remainder not in rem):
+                rem[remainder] = i
+            elif i - rem[remainder] > 1:
+                return True
+        return False
