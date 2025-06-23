@@ -20,7 +20,7 @@ class Solution:
             curr += node.val
             left = dfs(node.left, curr)
             right = dfs(node.right, curr)
-            return left or right
+            return left or right # Returns True or False if either the left or the right subtree has a valid path.
 
         return dfs(root, 0)
         
