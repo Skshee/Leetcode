@@ -38,3 +38,13 @@
 - Memory is a concern.
 
 - DFS uses less memory (just a stack), while BFS can consume a lot for wide graphs.
+
+`RULE OF THUMB:`
+
+| Problem Type                          | Preferred Algorithm |
+| ------------------------------------- | ------------------- |
+| Shortest Path in Unweighted Graph     | BFS                 |
+| Path Existence Check                  | DFS or BFS          |
+| All Possible Solutions (Backtracking) | DFS                 |
+| Level Order Traversal (like trees)    | BFS                 |
+| Topological Sort / Strong Components  | DFS                 |
