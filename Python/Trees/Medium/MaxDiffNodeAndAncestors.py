@@ -1,5 +1,5 @@
 '''
-Link: https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/
+Link : https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/
 '''
 
 # Definition for a binary tree node.
