@@ -1,6 +1,7 @@
 '''
 Link : https://leetcode.com/problems/trapping-rain-water/description/
-
+Reference : https://www.youtube.com/watch?v=ZI2z5pq0TqA
+Did the 2nd O(1) approach and honestly that even felt easier than the O(N) Approach
 '''
 
 class Solution:
