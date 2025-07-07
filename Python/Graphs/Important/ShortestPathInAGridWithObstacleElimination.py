@@ -11,8 +11,8 @@ class Solution:
 
         visited = set()
         queue = deque()
-        queue.append((0,0,0,k))
-        visited.add((0, 0, k))
+        queue.append((0,0,0,k)) # Current Steps, Row, Column, Remaining Obstacles
+        visited.add((0, 0, k)) # (Row, Column, Remaining Obstacles)
         directions = [[1,0],[0,1],[-1,0],[0,-1]]
 
         while queue:
