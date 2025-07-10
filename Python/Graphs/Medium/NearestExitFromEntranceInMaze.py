@@ -2,7 +2,7 @@
 Link : https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/
 '''
 
-My Method:
+# My Method:
 class Solution:
     def nearestExit(self, maze: List[List[str]], entrance: List[int]) -> int:
         m, n = len(maze), len(maze[0])
@@ -31,5 +31,6 @@ class Solution:
 
         return -1
 
-Faster Method:
+# Faster Method:
+
 

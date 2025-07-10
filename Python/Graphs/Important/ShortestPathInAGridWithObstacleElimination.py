@@ -1,5 +1,6 @@
 '''
 Link : https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/
+Reference : https://www.youtube.com/watch?v=VPleGcc1nZY&t=617s
 '''
 
 class Solution:
