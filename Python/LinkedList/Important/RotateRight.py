@@ -1,3 +1,7 @@
+'''
+Link : https://leetcode.com/problems/rotate-list/
+'''
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -19,7 +23,7 @@ class Solution:
         curr.next = head
 
         curr2 = head
-        for i in range(length - k % length - 1): # This is part where I made a mistake
+        for i in range(length - (k % length) - 1): # This is part where I made a mistake
             curr2 = curr2.next
         head = curr2.next
         curr2.next = None

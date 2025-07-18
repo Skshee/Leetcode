@@ -15,7 +15,7 @@ class Solution:
         for r in range(rows):
             for c in range(cols):
                 if mat[r][c] == 0:
-                    queue.append((r,c,1))
+                    queue.append((r,c,0)) # ( row, column, steps )
                     visited.add((r,c))
 
         directions = [[1,0],[0,1],[-1,0],[0,-1]]
@@ -27,6 +27,6 @@ class Solution:
                 if (r+dr, c+dc) not in visited and isValid(r+dr, c+dc):
                     queue.append((r+dr, c+dc, steps + 1))
                     visited.add((r+dr, c+dc))
-                    mat[r+dr][c+dc] = steps
+                    mat[r+dr][c+dc] = steps + 1
         return mat
 
