@@ -1,0 +1,13 @@
+## When should I consider using DP?
+
+1. The problem will be asking for an optimal value (max or min) of something or the number of ways to do something.
+    What is the minimum cost of doing ...
+    What is the maximum profit of ...
+    How many ways are there to ...
+    What is the longest possible ...
+
+
+2. At each step, you need to make a "decision", and decisions affect future decisions.
+    A decision could be picking between two elements
+    Decisions affecting future decisions could be something like "if you take an element x, then you can't take an element y in the future"
+
