@@ -1,6 +1,7 @@
 '''
 https://leetcode.com/problems/odd-even-linked-list/
-
+# Time: O(n)
+# Space: O(1)
 '''
 class Solution:
     def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
