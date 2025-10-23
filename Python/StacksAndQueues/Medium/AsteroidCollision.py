@@ -9,7 +9,8 @@ class Solution:
         stack = []
 
         for a in asteroids:
-            while stack and a < 0 and stack[-1] > 0:  # Loop keeps running until either a = 0 or a is bigger than all asteroids in stack
+            while stack and a < 0 and stack[-1] > 0:  # Collision occurs only when a is moving left and stack top is moving right
+                # Loop keeps running until either a = 0 or a is bigger than all asteroids in stack
                 diff = stack[-1] + a
                 
                 if diff < 0:
