@@ -1,0 +1,3 @@
+- del - 
+
+- .count method - 
