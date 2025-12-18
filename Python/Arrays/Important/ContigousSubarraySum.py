@@ -1,6 +1,8 @@
 '''
 Link : https://leetcode.com/problems/continuous-subarray-sum/
 Reference : https://www.youtube.com/watch?v=OKcrLfR-8mE&t=1s
+Time Complexity : O(n)
+Topic : Arrays, Hashing
 '''
 
 class Solution:

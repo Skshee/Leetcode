@@ -1,3 +1,9 @@
+'''
+Link : https://leetcode.com/problems/product-of-array-except-self/
+Time Complexity : O(n)
+Topic : Arrays, Prefix and Suffix Product
+LeetCode Problem : 238. Product of Array Except Self
+'''
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         # We can't do product of all and divide by num as it will fail if a number is 0. So we use Prefix and Suffix product

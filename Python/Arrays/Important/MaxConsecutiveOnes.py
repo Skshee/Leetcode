@@ -1,3 +1,10 @@
+'''
+Link : https://leetcode.com/problems/max-consecutive-ones-iii/
+Time Complexity : O(n)
+Topic : Arrays, Sliding Window
+LeetCode Problem : 1004. Max Consecutive Ones III
+'''
+
 class Solution:
     def longestOnes(self, nums: List[int], k: int) -> int:
         left=ans=curr=0

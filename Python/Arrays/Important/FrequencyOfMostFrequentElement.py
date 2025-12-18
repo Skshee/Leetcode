@@ -2,6 +2,8 @@
 Link : https://leetcode.com/problems/frequency-of-the-most-frequent-element/
 Reference : https://www.youtube.com/watch?v=vgBrQ0NM5vE
 Companies : Meta
+Topic : Arrays, Sliding Window, Sorting, Prefix Sum
+Time Complexity : O(n log n) due to sorting
 '''
 
 class Solution:

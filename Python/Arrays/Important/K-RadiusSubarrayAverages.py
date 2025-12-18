@@ -1,5 +1,7 @@
 '''
 Link : https://leetcode.com/problems/k-radius-subarray-averages/
+Time Complexity : O(n)
+Topic : Arrays, Sliding Window
 '''
 
 # Prefix Sum Method

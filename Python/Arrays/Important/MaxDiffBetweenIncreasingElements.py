@@ -1,5 +1,9 @@
 '''
 Link : https://leetcode.com/problems/maximum-difference-between-increasing-elements/?envType=daily-question&envId=2025-06-16
+Asked by : Amazon
+Topic : Arrays
+Time Complexity : O(n)
+LeetCode Problem : 2016. Maximum Difference Between Increasing Elements
 '''
 
 class Solution:

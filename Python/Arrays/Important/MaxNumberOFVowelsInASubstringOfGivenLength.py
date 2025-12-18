@@ -1,5 +1,8 @@
 '''
 Link : https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/?source=submission-noac
+Time Complexity : O(n)
+Topic : Arrays, Sliding Window
+LeetCode Problem : 1456. Maximum Number of Vowels in a Substring of Given Length
 '''
 
 class Solution:

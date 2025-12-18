@@ -2,6 +2,8 @@
 Link : https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/description/?envType=daily-question&envId=2025-06-18
 Question Of The Day : 18/6/25
 Asked by : Google 
+Topic : Arrays
+Time Complexity : O(n log n) due to sorting
 '''
 
 class Solution:

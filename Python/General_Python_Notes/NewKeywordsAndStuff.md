@@ -4,6 +4,8 @@
 
  .items, .keys, .values
 
+ - reversed() function
+
 - strings are immutable
 
 - sorted() can be used to sort string. Use ''.join to create the new sorted string

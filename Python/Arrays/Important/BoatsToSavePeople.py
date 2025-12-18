@@ -1,7 +1,7 @@
 '''
 Link: https://leetcode.com/problems/boats-to-save-people/
 Time Complexity : O(n log n) due to sorting
-
+Topic : Arrays, Two Pointers
 Pair the lightest and heaviest person whenever possible; if they fit within the limit, move both pointers, otherwise send the heavier one alone.
 Each step uses one boat until everyone is assigned.
 '''

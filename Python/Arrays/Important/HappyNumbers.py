@@ -1,6 +1,8 @@
 '''
 IMP Question : Asked often in Google Interviews
 Link : https://leetcode.com/problems/happy-number/description/
+Topic : Hashing, Math
+Time Complexity : O(log n) where n is the number of digits in the number
 '''
 
 class Solution:
