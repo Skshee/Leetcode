@@ -1,4 +1,5 @@
 # Prefix Sum Method
+# Time Complexity: O(n)
 class Solution:
     def getAverages(self, nums: List[int], k: int) -> List[int]:
         n = len(nums)
@@ -14,7 +15,7 @@ class Solution:
         return res
             
 # Sliding Window Method
-
+# Time Complexity: O(n)
 class Solution:
     def getAverages(self, nums: List[int], k: int) -> List[int]:
         n = len(nums)
