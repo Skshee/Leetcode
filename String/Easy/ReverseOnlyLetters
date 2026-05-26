@@ -1,0 +1,18 @@
+class Solution:
+    def reverseOnlyLetters(self, s: str) -> str:
+        # Okay I'll separately put all characters in a separate list
+        charList = []
+        string2=''
+        for i in s:
+            # ord is used to make string to ascii numeric conversions
+            if((ord(i) >= 65 and ord(i)<=90) or (ord(i)>= 97 and ord(i)<=122)):
+                charList.append(i)
+        j=len(charList)
+        print(charList)
+        for i in range(len(s)):
+            if ((ord(s[i]) >= 65 and ord(s[i])<=90) or (ord(s[i])>= 97 and ord(s[i])<=122)):
+                string2 += charList[j-1]
+                j-=1
+            else:
+                string2 += s[i]
+        return string2
