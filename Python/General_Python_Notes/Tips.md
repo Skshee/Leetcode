@@ -14,3 +14,17 @@ Example:
  - Use [] when: You don’t know the size in advance and **will append items**.
 
  - Use [value] * n when: You know the final size and want to **assign by index**.
+
+
+<h4>Sorting dict by keys and values</h4>
+
+`By Values` - Method 1:
+
+`res = sorted(d, key=d.get, reverse=True)[0]`
+- d → iterate over dictionary keys.
+- key=d.get → compare keys using their values (d[key]).
+- reverse=True → sort from largest value to smallest.
+
+Method 2:
+
+`sorted(d, key=lambda k: d[k])`
