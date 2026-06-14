@@ -37,3 +37,19 @@ function fn(arr, k):
 
     return ans
 ```
+
+## 2D Arrays
+
+'''
+If no. of rows = m and cols = n
+Row = // n
+Col = % n
+
+Example :  matrix = [[1,2,4,8],[10,11,12,13],[14,20,30,40]]
+row = //n
+col = % n
+
+## Hashing
+https://www.datacamp.com/tutorial/guide-to-python-hashmaps
+## Sets 
+https://www.datacamp.com/tutorial/sets-in-python
