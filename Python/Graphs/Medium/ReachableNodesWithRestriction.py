@@ -1,21 +1,24 @@
 class Solution:
     def reachableNodes(self, n: int, edges: List[List[int]], restricted: List[int]) -> int:
+        seen = set()
         graph = defaultdict(list)
-        visited = set()
+        # IMP STEP Convert to set because set gives faster lookup (O(1)) instead of list ka (O(n))
         restricted_set = set(restricted)
 
         def dfs(node):
             for neighbour in graph[node]:
-                if neighbour not in visited and neighbour not in restricted_set:
-                    visited.add(neighbour)
+                if neighbour not in seen and neighbour not in restricted_set:
+                    seen.add(neighbour)
                     dfs(neighbour)
 
-        for i in range(len(edges)):
-            graph[edges[i][0]].append(edges[i][1])
-            graph[edges[i][1]].append(edges[i][0])
-        
-        visited.add(0)
+        for x, y in edges:
+            graph[x].append(y)
+            graph[y].append(x)
+
+        seen.add(0)
         dfs(0)
-        return len(visited)
+        return len(seen)
+
         
 
+        
