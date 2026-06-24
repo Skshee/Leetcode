@@ -53,3 +53,5 @@ col = % n
 https://www.datacamp.com/tutorial/guide-to-python-hashmaps
 ## Sets 
 https://www.datacamp.com/tutorial/sets-in-python
+
+`Lists can't be added to sets untilllll -> we use .update instead of .add`
