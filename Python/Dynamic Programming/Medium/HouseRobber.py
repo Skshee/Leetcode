@@ -1,5 +1,6 @@
 '''
 Link : https://leetcode.com/problems/house-robber/
+Video Reference : https://www.youtube.com/watch?v=kIII1uT6F8Y
 '''
 class Solution:
     def rob(self, nums: List[int]) -> int:

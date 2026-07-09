@@ -1,27 +1,24 @@
 '''
 Link : https://leetcode.com/problems/climbing-stairs/
+Actually refer all solutions given here : https://neetcode.io/problems/climbing-stairs/solution
+and https://chatgpt.com/c/6a4f467b-4a80-83e8-b762-f7cd9e5c2609
 '''
-# Faster DP method
+# DFS method
 class Solution:
     def climbStairs(self, n: int) -> int:
-        def dp(i):
-            if i == 1 or i == 0:
-                return 1
-            
-            if i in memo:
-                return memo[i]
-
-            memo[i] = dp(i-1) + dp(i-2)
-            return memo[i]
+        # Top Down Approach
+        self.ways = 0
+        def dfs(i):
+            if i >= n:
+                return i == n # 1 if equal, 0 if not
+            return dfs(i+1) + dfs(i+2)
         
-        memo = {}
-        return dp(n)
+        return dfs(0)
+    
+#DP method(Memoization of dfs)
+            
 
-# Slower recursion
-    int climbStairs(int n) {
-        if (n == 0 || n == 1) {
-            return 1;
-        }
-        return climbStairs(n-1) + climbStairs(n-2);
-    }
+
+
+            
         
